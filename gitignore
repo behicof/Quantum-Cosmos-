@@ -1,0 +1,47 @@
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+.env
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+*.old
+*.out
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build artifacts
+node_modules/
+_site/
+output/
+dist/
+build/
+docs/*.pdf
+
+# Misc
+*.zip
+*.tar.gz
+.cache/
+logs/

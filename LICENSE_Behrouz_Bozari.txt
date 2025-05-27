@@ -1,0 +1,18 @@
+
+Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
+
+By Behrouz Bozari (c) 2025
+
+This license allows others to download the work and share it with others as long as they credit the creator, 
+but they can’t change it in any way or use it commercially.
+
+License Summary:
+- Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+- NonCommercial — You may not use the material for commercial purposes.
+- NoDerivatives — If you remix, transform, or build upon the material, you may not distribute the modified material.
+
+Full legal text available at:
+https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+
+All intellectual property, algorithms, designs, and system logic are the sole property of Behrouz Bozari.
+For permissions, licensing, or partnership: contact behrouzboozari7@gmail.com
