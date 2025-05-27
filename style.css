@@ -1,0 +1,27 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #eee;
+    line-height: 1.6;
+    padding: 20px;
+}
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255,255,255,0.1);
+}
+h1, h2 {
+    color: #ffd700;
+}
+ul {
+    margin-left: 20px;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #444;
+}
