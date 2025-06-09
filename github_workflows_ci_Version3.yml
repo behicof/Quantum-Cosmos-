@@ -1,0 +1,61 @@
+name: Quantum Cosmos CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  frontend-ci:
+    name: Frontend CI
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./frontend
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20' # می‌توانید نسخه Node.js مورد نیاز پروژه خود را مشخص کنید
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Run Linters (Optional)
+      # run: npm run lint # اگر لینتر دارید، این خط را از کامنت خارج و تنظیم کنید
+      run: echo "Skipping frontend linting for now."
+
+    - name: Run Tests
+      run: npm test # اگر دستور تست شما متفاوت است، آن را تغییر دهید
+
+  backend-ci:
+    name: Backend CI
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./backend
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11' # می‌توانید نسخه پایتون مورد نیاز پروژه خود را مشخص کنید
+
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pytest # اگر از pytest استفاده می‌کنید و در requirements.txt نیست
+
+    - name: Run Linters (Optional)
+      # run: flake8 . # یا black --check . , اگر لینتر دارید، این خط را از کامنت خارج و تنظیم کنید
+      run: echo "Skipping backend linting for now."
+
+    - name: Run Tests
+      run: pytest # اگر از فریمورک تست دیگری استفاده می‌کنید، دستور را تغییر دهید (مثلا: python -m unittest discover)
